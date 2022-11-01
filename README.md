@@ -16,7 +16,7 @@ Original App Design Project - README Template
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:Stock
-- **Mobile: new items posted near them or by businesses/items they follow
+- **Mobile: new stocks posted near them or by businesses/items they follow
 - **Story: Very valuable. it builds portfolio and empathy towards those in the communities
 - **Market: mid-sized, for people who want to contribute more to their stock/investment
 - **Habit: whenever they need to search for an stock, even out of mere curiosity of what is near to sky rocket and what stocks are available
