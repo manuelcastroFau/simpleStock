@@ -81,12 +81,14 @@ Original App Design Project - README Template
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* [Login]
+   * Forced Log-in -> Account creation if no log in is available -> List Of stocks
+* [List of stocks]
+   * Pick a stock -> Jumps to stock info show the tab navigation at bottom 
+   * User -> takes to user profile. 
+   * List of stock -> jumps back to the list of stocks
+   * News -> jumps to the news of the stocks
+   * Stocks -> takes back to the stock info screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
