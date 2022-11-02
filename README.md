@@ -27,41 +27,29 @@ Original App Design Project - README Template
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User logs in to access previous chats and preference settings
-* User picks what their favorite artist/genre/etc. (Think Spotify interface)
-* Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
-* Profile pages for each user
-* Settings (Accesibility, Notification, General, etc.)
-* 
--User will be able to sign up. 
--User will be able to login.
--User will have a profile.
--User will have a list of stocks.
--User will be able to see historical prices of a stock.
--User will be able to follow news of a specific stock.
+* User will be able to sign up. 
+* User will be able to login.
+* User will have a profile.
+* User will have a list of stocks.
+* User will be able to follow news of a specific stock.
+
 
 
 **Optional Nice-to-have Stories**
-
--User will be able to add all their stock purchases from other platforms to this app and track everything in one place
--Users can perform technical analysis on stock prices.
--User can view prices of options price chains.
--User can see get notifications of sudden price changes.
--Comment section under each stock to have discussions from all users and collect market sentiments and show predictions.
+* User will be able to see historical prices(1day, 1 week, 1 month , 1 year) of a stock on a chart.
+* User will be able to add all their stock purchases from other platforms to this app and track everything in one place
+* Users can perform technical analysis on stock prices.
+* User can view prices of options price chains.
+* User can see get notifications of sudden price changes.
+* Comment section under each stock to have discussions from all users and collect market sentiments and show predictions.
 
 
 **Stock Info**
 
--Prices of the stock. 
--Name of the company. 
--Price By Period. 
--weekly. 
--monthly. 
--yearly. 
--Dividends  
--Last key is the recent dividend we will show last dividend amount and date. 
--News. 
--Latest 3 news of the company. 
+* Price of the stock. 
+* Name of the company. 
+* Dividends  
+* News. 
 
 ### 2. Screen Archetypes
 [Login Screen]
