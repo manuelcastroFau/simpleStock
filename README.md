@@ -55,7 +55,7 @@ Original App Design Project - README Template
 
 
 * Sign In 
-       *User will be able to validate their account and login
+   * User will be able to validate their account and login
 * Sign Up - User signs up for a new Account
    * it will take user to profile creation page where they will add their personal information.
 * Stocks List - It will show popular stocks to the user.
