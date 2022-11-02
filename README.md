@@ -93,7 +93,7 @@ Original App Design Project - README Template
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 
-  [Imgur](https://imgur.com/kV6cvNt)
+ <img src="/MicrosoftTeams-image(1).png" alt="Wireframe" style="height: 400px; width:400px;"/>
 
  * PDF Wireframe Specs
   * https://drive.google.com/file/d/1IFhSu9nqnWOzIRewo118lGlA_oC2PcW4/view?usp=sharing
