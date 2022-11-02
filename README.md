@@ -16,31 +16,33 @@ Original App Design Project - README Template
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:Stock
-- **Mobile: new stocks posted near them or by businesses/items they follow
-- **Story: Very valuable. it builds portfolio and empathy towards those in the communities
-- **Market: mid-sized, for people who want to contribute more to their stock/investment
-- **Habit: whenever they need to search for an stock, even out of mere curiosity of what is near to sky rocket and what stocks are available
-- **Scope: managable, FYI will be properly planned.
+- **Mobile: The App will be primarily developed for the smartphones so that the user will be able to follow stock market trends and news on the go and track stock prices. depending on the demand we will be looking into expanding and making it compitiable for computers (PC/laptops). in the future we will be adding more features in this app.
+- **Story: the users anaylzes prices of specific stocks that the are interested in and can follow the news of the company and see the stats of the stock on the go and make informed decisions for their portfolio.
+- **Market: the primiary target group for this app is working class mostly, so the target age group is 20-50 years old.
+- **Habit: whenever they need to search for an stock, and stay up to date with current market events or even out of mere curiosity of what is near to sky rocket and what stocks are available.
+- **Scope: First we will it, start with basic feature such as tracking the price and news of certain stock, then we plan on to push a feature in the future where the user will have a journel and they can add all their stock purchases from different platfrorms and see it in one place. if there is demand then we will see if we can move in the direction of a brokrage and provide buy and sell features.
 
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
--User will be able to sign up 
--User will be able to login
--User will have a profile
+-User will be able to sign up. 
+-User will be able to login.
+-User will have a profile.
+-User will have a list of stocks.
+-User will be able to see historical prices of a stock.
+-User will be able to follow news of a specific stock.
 
 
 **Optional Nice-to-have Stories**
 
--User can view other profiles and portfolio ideas if given access
--Users can see stock profile's product feed
--User can view a feed of NewUpdate can see notifications when their stock is rising
--User can see notifications of new stock posted near them
--Users can follow user profile pages
--User can follow/unfollow another user
--User can see their profile page with their photos
+-User will be able to add all their stock purchases from other platforms to this app and track everything in one place
+-Users can perform technical analysis on stock prices.
+-User can view prices of options price chains.
+-User can see get notifications of sudden price changes.
+-Comment section under each stock to have discussions from all users and collect market sentiments and show predictions.
+
 
 **Stock Info**
 
