@@ -54,23 +54,10 @@ Original App Design Project - README Template
 
 
 
-* Sign In 
-   * User will be able to validate their account and login
-* Sign Up - User signs up for a new Account
-   * it will take user to profile creation page where they will add their personal information.
-* Stocks List - It will show popular stocks to the user.
-   * on this screen they will be able to select the stock of their choice to see more information.
-* Profile Screen 
-   * Allows user to upload a photo and update their information.
-* Stock.
-   * this screen will show user the stats of the stock (stock info) and the price of the stock.
-* News 
-   * this screen will show recent news of the stock so the user can stay up to date
-
 
 ### 2. Screen Archetypes
 * Sign In 
-       *User will be able to validate their account and login
+   * User will be able to validate their account and login
 * Sign Up - User signs up for a new Account
    * it will take user to profile creation page where they will add their personal information.
 * Stocks List - It will show popular stocks to the user.
