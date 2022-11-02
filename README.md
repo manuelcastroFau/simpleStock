@@ -93,7 +93,7 @@ Original App Design Project - README Template
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 
-![Imgur Image](https://imgur.com/a/yAUnKnN.png)
+  [https://imgur.com/kV6cvNt](https://imgur.com/a/yAUnKnN)
 
  * PDF Wireframe Specs
   * https://drive.google.com/file/d/1IFhSu9nqnWOzIRewo118lGlA_oC2PcW4/view?usp=sharing
