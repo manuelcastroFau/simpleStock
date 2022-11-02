@@ -74,9 +74,10 @@ Original App Design Project - README Template
 
 **Tab Navigation** (Tab to Screen)
 
-* [feed of items in their nearby stocls]
-* [search for stocks]
-* [their own personal profile]
+* [Stocks]
+* [List of stocks]
+* [News]
+* [User]
 
 **Flow Navigation** (Screen to Screen)
 
