@@ -97,6 +97,8 @@ Original App Design Project - README Template
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
+* HD Interactive Prototype
+  * https://youtu.be/Lsw9ShST6VA
 
 ## Schema 
 [This section will be completed in Unit 9]
