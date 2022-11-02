@@ -31,6 +31,7 @@ Original App Design Project - README Template
 * User will be able to login.
 * User will have a profile.
 * User will have a list of stocks.
+* User will be able to see to stock info
 * User will be able to follow news of a specific stock.
 
 
@@ -51,19 +52,35 @@ Original App Design Project - README Template
 * Dividends  
 * News. 
 
+
+
+* Sign In 
+       *User will be able to validate their account and login
+* Sign Up - User signs up for a new Account
+   * it will take user to profile creation page where they will add their personal information.
+* Stocks List - It will show popular stocks to the user.
+   * on this screen they will be able to select the stock of their choice to see more information.
+* Profile Screen 
+   * Allows user to upload a photo and update their information.
+* Stock.
+   * this screen will show user the stats of the stock (stock info) and the price of the stock.
+* News 
+   * this screen will show recent news of the stock so the user can stay up to date
+
+
 ### 2. Screen Archetypes
-[Login Screen]
-       -[User can login]
-[Registration Screen]
-       -[User can create a new account]
-[Stream]
-        -[User can view a feed of optional stocks]
-        -[User can double tap a stock to like]
-[Creation]
-        -[User can post a new stock to their feed]
-[Search
-[       -User can search for other users stocks]
-        -[User can follow/unfollow another user]
+* Sign In 
+       *User will be able to validate their account and login
+* Sign Up - User signs up for a new Account
+   * it will take user to profile creation page where they will add their personal information.
+* Stocks List - It will show popular stocks to the user.
+   * on this screen they will be able to select the stock of their choice to see more information.
+* Profile Screen 
+   * Allows user to upload a photo and update their information.
+* Stock.
+   * this screen will show user the stats of the stock (stock info) and the price of the stock.
+* News 
+   * this screen will show recent news of the stock so the user can stay up to date
 
 
 ### 3. Navigation
