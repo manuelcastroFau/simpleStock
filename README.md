@@ -97,7 +97,10 @@ Original App Design Project - README Template
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-* HD Interactive Prototype
+* Try Out Prototype (Test the Demo)
+  *https://manuelcastrofau.github.io/simpleStockWireframe/   
+
+* HD Video Demonstartion Interactive Prototype
   * https://youtu.be/Lsw9ShST6VA
 
 ## Schema 
