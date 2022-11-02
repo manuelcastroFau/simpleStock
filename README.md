@@ -27,16 +27,9 @@ Original App Design Project - README Template
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
--User can create a new account
--User can switch between private and open portfolio
--User can login, sign out, and stay in session when re-opening the app
--Stock accounts can post a new photo to their feed (default is their current or selected location)
--Stock account posts can submit the title of their item,
--News feed of posts of (desired location+radius)
--Users can select post and see the details and who the seller is and on the product itself
--Can search up stocks, will be given a list of products of best keyword match from investment in their location+radius will be provided simliar items outside of their location
--User can change/keep/view their stocks
-
+-User will be able to sign up 
+-User will be able to login
+-User will have a profile
 
 
 **Optional Nice-to-have Stories**
@@ -48,6 +41,19 @@ Original App Design Project - README Template
 -Users can follow user profile pages
 -User can follow/unfollow another user
 -User can see their profile page with their photos
+
+**Stock Info**
+
+-Prices of the stock
+-Name of the company
+-Price By Period
+-weekly
+-monthly
+-yearly
+-Dividends
+-Last key is the recent dividend we will show last dividend amount and date
+-News
+-Latest 3 news of the company
 
 ### 2. Screen Archetypes
 [Login Screen]
