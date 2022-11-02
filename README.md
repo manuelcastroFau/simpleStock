@@ -46,16 +46,16 @@ Original App Design Project - README Template
 
 **Stock Info**
 
--Prices of the stock
--Name of the company
--Price By Period
--weekly
--monthly
--yearly
--Dividends
--Last key is the recent dividend we will show last dividend amount and date
--News
--Latest 3 news of the company
+-Prices of the stock. 
+-Name of the company. 
+-Price By Period. 
+-weekly. 
+-monthly. 
+-yearly. 
+-Dividends  
+-Last key is the recent dividend we will show last dividend amount and date. 
+-News. 
+-Latest 3 news of the company. 
 
 ### 2. Screen Archetypes
 [Login Screen]
