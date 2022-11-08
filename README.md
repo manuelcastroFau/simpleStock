@@ -125,4 +125,14 @@ Original App Design Project - README Template
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
+List of network requests by screen
+  Home Feed Screen
+    (Create) Create a new login profile
+    (Delete) Delete news of a specific stock
+    (Delete) Delete Followiing of a stock
+Create Post Screen
+    (Create/POST) Create a journel 
+Profile Screen
+    (Read/GET) Query logged in user object
+    (Update) Update on user stock news
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
