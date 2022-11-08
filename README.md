@@ -112,6 +112,16 @@ Original App Design Project - README Template
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+
+| Property  | Type     | Description                                         
+| --------  | -------- | --------------------------------------------------- |                     
+| stockinfo |  ?       | will be able to see to stock info                   |
+| madeAt    | DateTime | when the news of the company stock was made         |
+| journel_  | list     | all their stock purchases from different platfrorms |
+| buy_sell  |  ?       | buy and sell features stock                         |
+| update    | DateTime | stay up to date with current market events          |
+| commCon   | Number   | number of comments that has been posted to stock.   |
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
