@@ -123,8 +123,7 @@ Original App Design Project - README Template
 | commCon   | Number   | number of comments that has been posted to stock.   |
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+
 List of network requests by screen
   Home Feed Screen
     (Create) Create a new login profile
@@ -135,4 +134,5 @@ Create Post Screen
 Profile Screen
     (Read/GET) Query logged in user object
     (Update) Update on user stock news
+    
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
