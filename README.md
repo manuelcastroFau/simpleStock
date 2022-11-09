@@ -53,8 +53,6 @@ Original App Design Project - README Template
 * News. 
 
 
-
-
 ### 2. Screen Archetypes
 * Sign In 
    * User will be able to validate their account and login
@@ -105,7 +103,7 @@ Original App Design Project - README Template
 * Try Out Prototype (Test the Demo)
   * https://manuelcastrofau.github.io/simpleStockWireframe/   
 
-* HD Video Demonstartion Interactive Prototype
+* HD Video Demonstration Interactive Prototype
   * https://youtu.be/Lsw9ShST6VA
 
 ## Schema 
@@ -113,26 +111,134 @@ Original App Design Project - README Template
 ### Models
 [Add table of models]
 
+We will use in back4app the following table to storage user profile and login values
 | Property  | Type     | Description                                         
 | --------  | -------- | --------------------------------------------------- |                     
-| stockinfo |  ?       | will be able to see to stock info                   |
-| madeAt    | DateTime | when the news of the company stock was made         |
-| journel_  | list     | all their stock purchases from different platfrorms |
-| buy_sell  |  ?       | buy and sell features stock                         |
-| update    | DateTime | stay up to date with current market events          |
-| commCon   | Number   | number of comments that has been posted to stock.   |
+| objectID |  String       | Unique ID of each Object                   |
+| firstName    | String | First Name of the user         |
+| LastName  | String     | Last Name of the user |
+| Username  |  String       | Username of each user                         |
+| Password    | String | password to validate the user    |
+| Email   | Number   | user email address    |
+| Phone   | Number   | user phone number  |
+| Photo   | Binary Data   | profile image of the user    |
 
-### Networking
+## Networking
 
 *List of network requests by screen
-  *Home Feed Screen
-    *(Create) Create a new login profile
-    *(Delete) Delete news of a specific stock
-    *(Delete) Delete Followiing of a stock
-*Create Screen
-    *(Create) Create a journel 
-*Profile Screen
-    *(Read/GET) Query logged in user object
-    *(Update) Update on user stock news
+
+  ### Sig in/ Sign Up screen
+ - Create or authenticate the user using back4app
+
+### Stocks List
+	-(Read/GET) Get Stock info from our predefined list
+	Using Stock Info API
+
+```
+import Foundation 
+let headers = [ "content-type": "application/x-www-form-urlencoded", "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f", "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com" ] 
+let postData = NSMutableData(data: "symbol=AAPL".data(using: String.Encoding.utf8)!) 
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/stock-info")! as URL, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0) 
+request.httpMethod = "POST" 
+request.allHTTPHeaderFields = headers 
+request.httpBody = postData as Data 
+let session = URLSession.shared let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in 
+	if (error != nil) { 
+		print(error) 
+		} else { 
+			let httpResponse = response as? HTTPURLResponse print(httpResponse) 
+			} }) 
+dataTask.resume()
+```
+##### Profile Screen
+	-(POST/GET) Get and set User data from back4app
+
+### Single Stock.
+   * (Read/GET) this screen will show user the stats of the stock (stock info) and the price of the stock.   
+   * Using Price by Period API
+   ```
+   swift
+   1.  ```
+    import Foundation
+    
+    let headers = [
+        "content-type": "application/x-www-form-urlencoded",
+        "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f",
+        "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
+    ]
+    
+    let postData = NSMutableData(data: "symbol=AAPL".data(using: String.Encoding.utf8)!)
+    postData.append("&period=7d".data(using: String.Encoding.utf8)!)
+    
+    let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/price")! as URL,
+                                            cachePolicy: .useProtocolCachePolicy,
+                                        timeoutInterval: 10.0)
+    request.httpMethod = "POST"
+    request.allHTTPHeaderFields = headers
+    request.httpBody = postData as Data
+    
+    let session = URLSession.shared
+    let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+        if (error != nil) {
+            print(error)
+        } else {
+            let httpResponse = response as? HTTPURLResponse
+            print(httpResponse)
+        }
+    })
+    
+    dataTask.resume()
+    ```
+   ```
+    
+
+### News 
+   * (Read/GET) This screen will show recent news of the stock so the user can stay up to date.   
+   * Using NEWS API call
+
+```
+swift
+1.  ```
+    import Foundation
+    
+    let headers = [
+        "content-type": "application/x-www-form-urlencoded",
+        "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f",
+        "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
+    ]
+    
+    let postData = NSMutableData(data: "symbol=AAPL".data(using: String.Encoding.utf8)!)
+    
+    let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/news")! as URL,
+                                            cachePolicy: .useProtocolCachePolicy,
+                                        timeoutInterval: 10.0)
+    request.httpMethod = "POST"
+    request.allHTTPHeaderFields = headers
+    request.httpBody = postData as Data
+    
+    let session = URLSession.shared
+    let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+        if (error != nil) {
+            print(error)
+        } else {
+            let httpResponse = response as? HTTPURLResponse
+            print(httpResponse)
+        }
+    })
+    
+    dataTask.resume()
+    ```
+```
+
+  
     
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+### Yahoo Finance API
+- Base URL - [https://yahoo-finance97.p.rapidapi.com/](https://yahoo-finance97.p.rapidapi.com/ "https://yahoo-finance97.p.rapidapi.com/")
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /stock-info | get Stocks basic stats and information
+    `GET`    | /price | Get Stock price by period of time
+    `GET`    | /news |  Show recent news of the stock from a specific stocks
