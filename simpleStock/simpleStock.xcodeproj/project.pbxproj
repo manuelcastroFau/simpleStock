@@ -14,6 +14,7 @@
 		64A0E8B529236E0B00A9BA13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A0E8B429236E0B00A9BA13 /* Assets.xcassets */; };
 		64A0E8B829236E0B00A9BA13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A0E8B629236E0B00A9BA13 /* LaunchScreen.storyboard */; };
 		64A0E8C02923796200A9BA13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0E8BF2923796200A9BA13 /* LoginViewController.swift */; };
+		64A0E8C2292738EC00A9BA13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0E8C1292738EC00A9BA13 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		64A0E8B729236E0B00A9BA13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64A0E8B929236E0B00A9BA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A0E8BF2923796200A9BA13 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		64A0E8C1292738EC00A9BA13 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D8E64B6699B34D5248A8A312 /* Pods-simpleStock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleStock.debug.xcconfig"; path = "Target Support Files/Pods-simpleStock/Pods-simpleStock.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				64A0E8B629236E0B00A9BA13 /* LaunchScreen.storyboard */,
 				64A0E8B929236E0B00A9BA13 /* Info.plist */,
 				64A0E8BF2923796200A9BA13 /* LoginViewController.swift */,
+				64A0E8C1292738EC00A9BA13 /* ProfileViewController.swift */,
 			);
 			path = simpleStock;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				64A0E8C02923796200A9BA13 /* LoginViewController.swift in Sources */,
 				64A0E8AC29236E0900A9BA13 /* AppDelegate.swift in Sources */,
+				64A0E8C2292738EC00A9BA13 /* ProfileViewController.swift in Sources */,
 				64A0E8AE29236E0900A9BA13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
