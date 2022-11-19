@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00607BF8245509E58942C657 /* Pods_simpleStock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434BCF1E91EC980565FBBDCA /* Pods_simpleStock.framework */; };
+		287B9BF62928694E00407AF8 /* YahooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B9BF52928694E00407AF8 /* YahooAPI.swift */; };
 		64A0E8AC29236E0900A9BA13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0E8AB29236E0900A9BA13 /* AppDelegate.swift */; };
 		64A0E8AE29236E0900A9BA13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0E8AD29236E0900A9BA13 /* SceneDelegate.swift */; };
 		64A0E8B329236E0900A9BA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A0E8B129236E0900A9BA13 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287B9BF52928694E00407AF8 /* YahooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooAPI.swift; sourceTree = "<group>"; };
 		434BCF1E91EC980565FBBDCA /* Pods_simpleStock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpleStock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52123DDBE31EA99A13E6492C /* Pods-simpleStock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleStock.release.xcconfig"; path = "Target Support Files/Pods-simpleStock/Pods-simpleStock.release.xcconfig"; sourceTree = "<group>"; };
 		64A0E8A829236E0900A9BA13 /* simpleStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				64A0E8B929236E0B00A9BA13 /* Info.plist */,
 				64A0E8BF2923796200A9BA13 /* LoginViewController.swift */,
 				64A0E8C1292738EC00A9BA13 /* ProfileViewController.swift */,
+				287B9BF52928694E00407AF8 /* YahooAPI.swift */,
 			);
 			path = simpleStock;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				64A0E8C02923796200A9BA13 /* LoginViewController.swift in Sources */,
 				64A0E8AC29236E0900A9BA13 /* AppDelegate.swift in Sources */,
+				287B9BF62928694E00407AF8 /* YahooAPI.swift in Sources */,
 				64A0E8C2292738EC00A9BA13 /* ProfileViewController.swift in Sources */,
 				64A0E8AE29236E0900A9BA13 /* SceneDelegate.swift in Sources */,
 			);
