@@ -9,4 +9,14 @@ target 'simpleStock' do
   pod 'Parse'
   pod 'AlamofireImage'
 
+
+
+
+target 'simpleStock' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for simpleStock
+  pod 'Parse'
+
 end
