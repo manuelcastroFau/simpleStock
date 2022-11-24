@@ -10,11 +10,11 @@ import Parse
 
 class LoginViewController: UIViewController {
     
-    func test(){
-        let test = YahooAPI()
-        let grab = test.Getnews(company: "AAPL")
-        //print(grab)
-    }
+//    func test(){
+//        let test = YahooAPI()
+//        let grab = test.Getnews(company: "AAPL")
+//        //print(grab)
+//    }
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        test()
+       // test()
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
