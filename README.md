@@ -5,9 +5,10 @@ Original App Design Project - README Template
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Sprint](#Sprint)
+3. [Product Spec](#Product-Spec)
+4. [Wireframes](#Wireframes)
+5. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -27,13 +28,14 @@ Original App Design Project - README Template
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User will be able to sign up. 
-* User will be able to login.
-* User will have a profile.
-* User will have a list of stocks.
+* - [X] User will be able to sign up. 
+* - [X] User will be able to login.
+* - [X] User will have a profile.
+* - [X] User will have a list of stocks.
 * User will be able to see to stock info
 * User will be able to follow news of a specific stock.
 
+## Sprints  
 
 ## Sprint 2 Issues Completed
 - [X] Make Today Trending Stock screen dynamic
@@ -51,7 +53,7 @@ Original App Design Project - README Template
   @annaswaheed
   @manuelcastroFau
   
-  ## Sprint 1 Issues Completed
+## Sprint 1 Issues Completed
 
 - [X] Login Page UI.
   @manuelcastroFau
