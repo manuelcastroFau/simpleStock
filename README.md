@@ -35,6 +35,38 @@ Original App Design Project - README Template
 * User will be able to follow news of a specific stock.
 
 
+## Sprint 2 Issues Completed
+- [X] Make Today Trending Stock screen dynamic
+  @annaswaheed
+  @manuelcastroFau
+
+- [X] investigate how the visualization of price data as graph
+  @annaswaheed
+
+- [X] create a user profile in swift UI
+  @Velo23
+
+
+- [X] write the library for the Yahoo API to get the stock info
+  @annaswaheed
+  @manuelcastroFau
+  
+  ## Sprint 1 Issues Completed
+
+- [X] Login Page UI.
+  @manuelcastroFau
+
+
+- [X] User should be able to login
+  @manuelcastroFau
+
+
+- [X] create the List of stocks UI
+  @annaswaheed
+  @manuelcastroFau
+
+- [X] Connect the application to the back4apps
+@manuelcastroFau
 
 **Optional Nice-to-have Stories**
 * User will be able to see historical prices(1day, 1 week, 1 month , 1 year) of a stock on a chart.
