@@ -35,7 +35,7 @@ Original App Design Project - README Template
 * User will be able to see to stock info
 * User will be able to follow news of a specific stock.
 
-## Sprints  
+### 2 - Sprints  
 
 ## Sprint 2 Issues Completed
 - [X] Make Today Trending Stock screen dynamic
