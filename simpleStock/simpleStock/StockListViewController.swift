@@ -8,13 +8,19 @@
 import UIKit
 import Parse
 
+
 class StockListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     
     
     
     @IBOutlet weak var tableView: UITableView!
     
     var stocks = [PFObject]()
+    
+    //ssss
+    //var stockPrice = [] as? String
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +38,31 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.StockTicker.text = ticker
         cell.Stockname.text = stock["stockName"] as! String
         
-        let x = loadData(ticker: ticker)
+        //let x = loadData(ticker: ticker)
         //let y:String  = x as String
        
         
         
-        print(ticker)
-        print("-->  "+x)
-        cell.StockPrice.text = x
+//        print(ticker)
+//        print("-->  "+x)
+//        cell.StockPrice.text = x
+//
+//
+        
+        // Curenct call to the api passing ticker(Stock code) as input
+        let stockCurrentPrice:String
+        let x = YahooAPI()
+                let test = x.GetStockInfo(stock:ticker)
+                do{
+                    let y = try? JSONDecoder().decode(StockInfo.self, from: test)
+                    print(y!.data.currentPrice)
+                    stockCurrentPrice = String(y!.data.currentPrice)
+                }
+                catch{
+                    print("error")
+                }
+        
+        cell.StockPrice.text = stockCurrentPrice
         
         
         
@@ -63,7 +86,6 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
                         print("Here is the error")
                     }
                 }
-        
          
     }
     
