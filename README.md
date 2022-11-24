@@ -35,7 +35,7 @@ Original App Design Project - README Template
 * User will be able to see to stock info
 * User will be able to follow news of a specific stock.
 
-### 2 - Sprints  
+### 2. - Sprints  
 
 ## Sprint 2 Issues Completed
 - [X] Make Today Trending Stock screen dynamic
@@ -87,7 +87,7 @@ Original App Design Project - README Template
 * News. 
 
 
-### 2. Screen Archetypes
+### 3. Screen Archetypes
 * Sign In 
    * User will be able to validate their account and login
 * Sign Up - User signs up for a new Account
@@ -102,7 +102,7 @@ Original App Design Project - README Template
    * this screen will show recent news of the stock so the user can stay up to date
 
 
-### 3. Navigation
+### 4. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
@@ -140,7 +140,7 @@ Original App Design Project - README Template
 * HD Video Demonstration Interactive Prototype
   * https://youtu.be/Lsw9ShST6VA
 
-## Schema 
+### 5. Schema 
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
