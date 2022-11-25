@@ -18,7 +18,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var messageLable: UILabel!
     
+    //Please input login access
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +35,13 @@ class LoginViewController: UIViewController {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil {
+                self.messageLable.text="Please input login access"
+                self.messageLable.textColor=UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.00)
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 print("Error: \(error?.localizedDescription)")
+                self.messageLable.textColor=UIColor(red: 1.00, green: 0.00, blue: 0.00, alpha: 1.00)
+                self.messageLable.text = "Not valid user login data"
             }
         }
         

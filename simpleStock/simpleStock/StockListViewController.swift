@@ -17,7 +17,7 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     
     var stocks = [PFObject]()
-    
+    let x = YahooAPI()
     //ssss
     //var stockPrice = [] as? String
     
@@ -28,6 +28,20 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
+    
+    
+    //Logout function
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return }
+        delegate.window?.rootViewController = loginViewController
+    }
+
+   
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StockTableViewCell") as! StockTableViewCell
@@ -51,8 +65,12 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // Curenct call to the api passing ticker(Stock code) as input
         let stockCurrentPrice:String
-        let x = YahooAPI()
-                let test = x.GetStockInfo(stock:ticker)
+       
+        // Since we are poor students I'm paying only for 5 call perseconds in the api
+        // so we will slepp for 1/5 of second to do it
+        usleep(200000)
+       
+        let test = x.GetStockInfo(stock:ticker)
                 do{
                     let y = try? JSONDecoder().decode(StockInfo.self, from: test)
                     print(y!.data.currentPrice)
@@ -95,15 +113,36 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     
-    /*
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        // find the selected stock
+        
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        
+        let stock = stocks[indexPath.row]
+        
+        // Pass the selected stock to details stock controllers
+        let stockDetailViewController = segue.destination as! StockDetailViewController
+        
+        stockDetailViewController.stock = stock
+        
+        
     }
-    */
+  
+    
+    
+    
+    
+    ////////////////////////2@@######################
     
     var price:String=""
     func loadData(ticker: String) -> String {
