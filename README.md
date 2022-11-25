@@ -9,6 +9,7 @@ Original App Design Project - README Template
 3. [Product Spec](#Product-Spec)
 4. [Wireframes](#Wireframes)
 5. [Schema](#Schema)
+6. [Video Walkthrough](#Video Walkthrough)
 
 ## Overview
 ### Description
@@ -278,3 +279,8 @@ swift
     `GET`    | /stock-info | get Stocks basic stats and information
     `GET`    | /price | Get Stock price by period of time
     `GET`    | /news |  Show recent news of the stock from a specific stocks
+
+### 6. Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+![Imgur](https://imgur.com/sTFzY4z.gif)
