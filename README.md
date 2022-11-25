@@ -48,6 +48,8 @@ Original App Design Project - README Template
 - [X] create a user profile in swift UI
   @Velo23
 
+- [X] Implement log sessions and logout for user
+  @manuelcastroFau
 
 - [X] write the library for the Yahoo API to get the stock info
   @annaswaheed
