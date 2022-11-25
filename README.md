@@ -267,6 +267,16 @@ swift
     ```
 ```
 
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+
+
+![Imgur](https://imgur.com/sTFzY4z.gif)
+
   
     
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
