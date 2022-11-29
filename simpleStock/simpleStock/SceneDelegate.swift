@@ -19,13 +19,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-
+//
+//        if PFUser.current() != nil{
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let stockListNavigationController = main.instantiateViewController(withIdentifier: "StockListNavigationController")
+//            window?.rootViewController = stockListNavigationController
+//        }
+        
+        //   ProfileViewController
         if PFUser.current() != nil{
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let stockListNavigationController = main.instantiateViewController(withIdentifier: "StockListNavigationController")
+            let stockListNavigationController = main.instantiateViewController(withIdentifier: "ProfileViewController")
             window?.rootViewController = stockListNavigationController
         }
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
