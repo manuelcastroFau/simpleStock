@@ -26,12 +26,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            window?.rootViewController = stockListNavigationController
 //        }
         
-        //   ProfileViewController
+        //tabBarController
+        
         if PFUser.current() != nil{
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let stockListNavigationController = main.instantiateViewController(withIdentifier: "ProfileViewController")
+            let stockListNavigationController = main.instantiateViewController(withIdentifier: "tabBarController")
             window?.rootViewController = stockListNavigationController
         }
+        
+        //   ProfileViewController
+//        if PFUser.current() != nil{
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let stockListNavigationController = main.instantiateViewController(withIdentifier: "ProfileViewController")
+//            window?.rootViewController = stockListNavigationController
+//        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
