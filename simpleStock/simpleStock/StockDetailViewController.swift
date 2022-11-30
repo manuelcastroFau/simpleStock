@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class StockDetailViewController: UIViewController {
     
@@ -24,6 +25,7 @@ class StockDetailViewController: UIViewController {
     @IBOutlet weak var stock52LowValue: UILabel!
     @IBOutlet weak var stockOpenValue: UILabel!
     @IBOutlet weak var stockWebsiteValue: UILabel!
+    @IBOutlet weak var stockLogoImageView: UIImageView!
     
     let x = YahooAPI()
     
@@ -65,8 +67,13 @@ class StockDetailViewController: UIViewController {
                         self.stockRecomendationValue.textColor=UIColor(red: 0.00, green: 1.00, blue: 0.00, alpha: 1.00)
                     } else {
                         self.stockRecomendationValue.textColor=UIColor(red: 1.00, green: 0.00, blue: 0.00, alpha: 1.00)
+                        stockRecomendationValue.text = "SELL"
                     }
                     
+                    let logoUrl:String = String(y!.data.logo_url)
+                    let url = URL(string: logoUrl)!
+                    
+                    stockLogoImageView.af.setImage(withURL: url)
                     
                 }
                 catch{

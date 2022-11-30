@@ -445,8 +445,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SALE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-ah-Pjj">
-                                <rect key="frame" x="325" y="557" width="46" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SALE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-ah-Pjj">
+                                <rect key="frame" x="293" y="557" width="83" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
@@ -529,6 +529,7 @@
                         <outlet property="stockCurrenPriceValue" destination="8le-Lj-NEE" id="NKc-nQ-l0h"/>
                         <outlet property="stockHighValue" destination="o0V-ye-pam" id="ua5-iH-vQo"/>
                         <outlet property="stockIncomeValue" destination="diW-yw-xpX" id="evR-eX-jhS"/>
+                        <outlet property="stockLogoImageView" destination="sB3-Bw-Xym" id="oa3-r8-ZFB"/>
                         <outlet property="stockLowValue" destination="Bia-Fv-c3i" id="g61-Wn-vt5"/>
                         <outlet property="stockOpenValue" destination="2aR-ai-Lm8" id="7q5-Nz-Q22"/>
                         <outlet property="stockRecomendationValue" destination="YlJ-ah-Pjj" id="bf4-L5-SBL"/>
