@@ -9,10 +9,37 @@ import Foundation
 
 struct info: Decodable{
     let address1 : String
+    let longName : String
+    let logo_url : String
+    let website: String
+    let recommendationKey: String
     let currentPrice: Double
+    let fiftyTwoWeekHigh: Double
+    let fiftyTwoWeekLow: Double
+    let averageVolume: Double
+    let dayHigh: Double
+    let dayLow: Double
+    //let dividendYield: Double
+    let netIncomeToCommon:Double
+    let open: Double
+    let marketCap: Double
+    
     init() {
         address1 = ""
         currentPrice = 0
+        longName = ""
+        logo_url = ""
+        website = ""
+        recommendationKey = ""
+        fiftyTwoWeekHigh = 0
+        fiftyTwoWeekLow = 0
+        averageVolume = 0
+        dayHigh = 0
+        dayLow = 0
+        //dividendYield = 0
+        netIncomeToCommon = 0
+        open = 0
+        marketCap = 0
     }
 }
 struct StockInfo: Decodable {
