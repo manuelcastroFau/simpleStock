@@ -120,7 +120,7 @@
       "filename" : "Icon-20.png",
       "idiom" : "universal",
       "scale" : "1x",
-      "size" : "20x20"
+      "size" : "40x40"
     },
     {
       "filename" : "Icon-40.png",
@@ -168,7 +168,7 @@
       "filename" : "Icon-83.5@2x.png",
       "idiom" : "universal",
       "scale" : "2x",
-      "size" : "83.5x83.5"
+      "size" : "76x76"
     }
   ],
   "info" : {
