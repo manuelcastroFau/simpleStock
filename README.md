@@ -33,7 +33,7 @@ Original App Design Project - README Template
 * - [X] User will be able to login.
 * - [X] User will have a profile.
 * - [X] User will have a list of stocks.
-* User will be able to see to stock info
+* - [X] User will be able to see to stock info
 * User will be able to follow news of a specific stock.
 
 ### 2. - Sprints  
