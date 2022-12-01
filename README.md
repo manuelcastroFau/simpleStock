@@ -33,45 +33,72 @@ Original App Design Project - README Template
 * - [X] User will be able to login.
 * - [X] User will have a profile.
 * - [X] User will have a list of stocks.
-* User will be able to see to stock info
+* - [X] User will be able to see to stock info
+* - [X] User will be able to navigate between different screens
 * User will be able to follow news of a specific stock.
 
-### 2. - Sprints  
+## 2. - Sprints  
 
-## Sprint 2 Issues Completed
-- [X] Make Today Trending Stock screen dynamic
+
+### Sprint 3 Issues Completed
+
+- [X] add the navigation bar at the bottom of the screen  
   @annaswaheed
   @manuelcastroFau
 
-- [X] investigate how the visualization of price data as graph
+- [X] parse the data from the API for detail view stock page  
   @annaswaheed
+  @manuelcastroFau
 
-- [X] create a user profile in swift UI
+- [X] make sure the profile page is working  
+  @annaswaheed
+  @manuelcastroFau
+
+- [X] Make sure the user stays logins after restarting the application  
+  @manuelcastroFau
+
+- [X] create the detail view of stock page UI  
+  @manuelcastroFau
+
+- [X] User Can modify his account  
   @Velo23
 
-- [X] Implement log sessions and logout for user
+
+
+### Sprint 2 Issues Completed
+- [X] Make Today Trending Stock screen dynamic  
+  @annaswaheed
   @manuelcastroFau
 
-- [X] write the library for the Yahoo API to get the stock info
+- [X] investigate how the visualization of price data as graph  
+  @annaswaheed
+
+- [X] create a user profile in swift UI  
+  @Velo23
+
+- [X] Implement log sessions and logout for user  
+  @manuelcastroFau
+
+- [X] write the library for the Yahoo API to get the stock info  
   @annaswaheed
   @manuelcastroFau
   
-## Sprint 1 Issues Completed
+### Sprint 1 Issues Completed
 
-- [X] Login Page UI.
+- [X] Login Page UI  
   @manuelcastroFau
 
 
-- [X] User should be able to login
+- [X] User should be able to login  
   @manuelcastroFau
 
 
-- [X] create the List of stocks UI
+- [X] create the List of stocks UI  
   @annaswaheed
   @manuelcastroFau
 
-- [X] Connect the application to the back4apps
-@manuelcastroFau
+- [X] Connect the application to the back4apps  
+  @manuelcastroFau
 
 **Optional Nice-to-have Stories**
 * User will be able to see historical prices(1day, 1 week, 1 month , 1 year) of a stock on a chart.
@@ -267,18 +294,6 @@ swift
     dataTask.resume()
     ```
 ```
-
-
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-
-
-![Imgur](https://imgur.com/sTFzY4z.gif)
-
-  
     
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 ### Yahoo Finance API
@@ -292,5 +307,9 @@ Here's a walkthrough of implemented user stories:
 
 ### 6. Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-![Imgur](https://imgur.com/sTFzY4z.gif)
+Here's a walkthrough of implemented user stories:  
+  
+![Imgur](https://imgur.com/UT6BGku.gif)
+
+HD Video Walkthrough
+https://www.youtube.com/watch?v=4L-0ED7ox_M
