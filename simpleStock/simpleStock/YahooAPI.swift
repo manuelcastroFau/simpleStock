@@ -7,6 +7,25 @@
 
 import Foundation
 
+
+struct ninfo: Decodable{
+    let title : String
+    let link  : String
+    
+    
+    init(){
+        title = ""
+        link = ""
+    }
+}
+
+
+
+
+struct news:Decodable{
+    let data : [ninfo]
+}
+
 struct info: Decodable{
     let address1 : String
     let longName : String
@@ -180,12 +199,7 @@ class YahooAPI{
 //    }
 //    
 //    
-    
-   
-    
-    
-        
-    
+
     
     func GetStockInfo(stock:String) -> Data{
             var ret: Data = Data()
@@ -215,6 +229,46 @@ class YahooAPI{
         }
     
     
+    
+    
+    func GetNews(stock: String) -> Data{
+        
+        var ret: Data = Data()
+        var semaphore = DispatchSemaphore (value: 0)
+        let headers = [
+            "content-type": "application/x-www-form-urlencoded",
+            "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f",
+            "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
+        ]
+        
+        let postData = NSMutableData(data: "symbol=AAPL".data(using: String.Encoding.utf8)!)
+        
+        let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/news")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = headers
+        request.httpBody = postData as Data
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                //print(String(data: data!, encoding: String.Encoding.utf8))
+                ret = data!
+                //print(httpResponse)
+                semaphore.signal()
+            }
+        })
+        
+        dataTask.resume()
+        
+        semaphore.wait()
+        return ret
+    }
+
 }
 
 
