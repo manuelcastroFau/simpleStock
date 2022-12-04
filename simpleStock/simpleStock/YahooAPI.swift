@@ -8,6 +8,38 @@
 import Foundation
 
 
+struct NewsJSON: Codable {
+    let data: [Datum]
+    let message: String
+    let status: Int
+}
+struct Datum: Codable {
+    let link: String
+    let providerPublishTime: Int
+    let publisher: String
+    let relatedTickers: [String]
+    let thumbnail: Thumbnail?
+    let title, type, uuid: String
+}
+struct Thumbnail: Codable {
+    let resolutions: [Resolution]
+}
+struct Resolution: Codable {
+    let height: Int
+    let tag: Tag
+    let url: String
+    let width: Int
+}
+enum Tag: String, Codable {
+    case original = "original"
+    case the140X140 = "140x140"
+}
+
+
+
+
+///////hgggg
+
 struct ninfo: Decodable{
     let title : String
     let link  : String
@@ -241,7 +273,7 @@ class YahooAPI{
             "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
         ]
         
-        let postData = NSMutableData(data: "symbol=AAPL".data(using: String.Encoding.utf8)!)
+        let postData = NSMutableData(data: "symbol=\(stock)".data(using: String.Encoding.utf8)!)
         
         let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/news")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,

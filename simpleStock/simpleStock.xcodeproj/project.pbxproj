@@ -19,6 +19,8 @@
 		64BA9DB9293017EF002BC8FD /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA9DB8293017EF002BC8FD /* StockDetailViewController.swift */; };
 		64BF5146292C760C00A69027 /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF5145292C760C00A69027 /* StockListViewController.swift */; };
 		64BF5148292C81E800A69027 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF5147292C81E800A69027 /* StockTableViewCell.swift */; };
+		64D2A212293B3F850065F4F8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2A211293B3F850065F4F8 /* NewsViewController.swift */; };
+		64D2A214293B45DF0065F4F8 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2A213293B45DF0065F4F8 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		64BA9DB8293017EF002BC8FD /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		64BF5145292C760C00A69027 /* StockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
 		64BF5147292C81E800A69027 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		64D2A211293B3F850065F4F8 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		64D2A213293B45DF0065F4F8 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		D8E64B6699B34D5248A8A312 /* Pods-simpleStock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleStock.debug.xcconfig"; path = "Target Support Files/Pods-simpleStock/Pods-simpleStock.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,8 @@
 				64BF5145292C760C00A69027 /* StockListViewController.swift */,
 				64BF5147292C81E800A69027 /* StockTableViewCell.swift */,
 				64BA9DB8293017EF002BC8FD /* StockDetailViewController.swift */,
+				64D2A211293B3F850065F4F8 /* NewsViewController.swift */,
+				64D2A213293B45DF0065F4F8 /* NewsTableViewCell.swift */,
 			);
 			path = simpleStock;
 			sourceTree = "<group>";
@@ -223,10 +229,12 @@
 			files = (
 				64BA9DB9293017EF002BC8FD /* StockDetailViewController.swift in Sources */,
 				64BF5148292C81E800A69027 /* StockTableViewCell.swift in Sources */,
+				64D2A214293B45DF0065F4F8 /* NewsTableViewCell.swift in Sources */,
 				64A0E8C02923796200A9BA13 /* LoginViewController.swift in Sources */,
 				64A0E8AC29236E0900A9BA13 /* AppDelegate.swift in Sources */,
 				287B9BF62928694E00407AF8 /* YahooAPI.swift in Sources */,
 				64BF5146292C760C00A69027 /* StockListViewController.swift in Sources */,
+				64D2A212293B3F850065F4F8 /* NewsViewController.swift in Sources */,
 				64A0E8C2292738EC00A9BA13 /* ProfileViewController.swift in Sources */,
 				64A0E8AE29236E0900A9BA13 /* SceneDelegate.swift in Sources */,
 			);
