@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -240,7 +241,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StockTableViewCell" rowHeight="80" id="yKf-GV-DRB" customClass="StockTableViewCell" customModule="simpleStock" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yKf-GV-DRB" id="3gy-Q2-Oh1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -256,13 +257,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-Yv-vJv">
-                                                    <rect key="frame" x="277.5" y="28" width="47" height="22"/>
+                                                    <rect key="frame" x="275" y="28" width="47" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Q1-u3b">
-                                                    <rect key="frame" x="354.5" y="24" width="39.5" height="31"/>
+                                                    <rect key="frame" x="352" y="24" width="42" height="34.5"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="filled" title="-&gt;">
                                                         <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
@@ -581,7 +582,7 @@
                     <tabBarItem key="tabBarItem" title="Stocks" id="jJW-Yg-poM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Br2-oM-wAU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -607,7 +608,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="247" id="s4y-F1-Fsj" customClass="NewsTableViewCell" customModule="simpleStock" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="247"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="247"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s4y-F1-Fsj" id="2X5-l8-YLd">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="247"/>
@@ -622,17 +623,7 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LinktoNews" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-K0-6Do">
-                                                    <rect key="frame" x="168" y="81" width="226" height="71"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" link="YES" staticText="YES"/>
-                                                    </accessibility>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="archivebox.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tFx-9c-KQZ">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="No_Img_Avail" translatesAutoresizingMaskIntoConstraints="NO" id="tFx-9c-KQZ">
                                                     <rect key="frame" x="20" y="81" width="140" height="140"/>
                                                     <color key="tintColor" systemColor="systemGreenColor"/>
                                                     <constraints>
@@ -654,6 +645,15 @@
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Link not available" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tzd-8s-ck1">
+                                                    <rect key="frame" x="168" y="81" width="226" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kUe-I0-8ha" firstAttribute="leading" secondItem="2X5-l8-YLd" secondAttribute="leading" constant="20" id="1KW-u2-507"/>
@@ -664,9 +664,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="HyperLinkNews" destination="tzd-8s-ck1" id="P1a-TL-Er8"/>
                                             <outlet property="newsDateLabel" destination="PMG-Zu-INI" id="mzJ-dB-5DV"/>
                                             <outlet property="newsImageView" destination="tFx-9c-KQZ" id="F5v-D1-7yW"/>
-                                            <outlet property="newsLinkLabel" destination="Fye-K0-6Do" id="aRR-vD-42M"/>
                                             <outlet property="newsPubliserLabel" destination="E52-B2-w9B" id="HIa-uE-klW"/>
                                             <outlet property="newsTitleLabel" destination="kUe-I0-8ha" id="Qwo-9e-vK0"/>
                                         </connections>
@@ -688,11 +688,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="archivebox.circle" catalog="system" width="128" height="121"/>
+        <image name="No_Img_Avail" width="650" height="530"/>
         <image name="loginLogo" width="200" height="200"/>
         <image name="profile" width="32" height="32"/>
         <image name="profit" width="32" height="32"/>
         <image name="usernamelogo" width="860" height="900"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
