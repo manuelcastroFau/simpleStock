@@ -12,6 +12,7 @@ import AlamofireImage
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    
     @IBOutlet weak var tableView: UITableView!
     
     var stock: PFObject!
@@ -57,7 +58,11 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.newsDateLabel.text = "Date: " + newsDate
         
         
-        cell.newsLinkLabel.text = y.data[indexPath.row].link as String?
+//        cell.newsLinkLabel.text = y.data[indexPath.row].link as String?
+//
+        
+        cell.HyperLinkNews.text=y.data[indexPath.row].link as String?
+        
         cell.newsPubliserLabel.text = "Publisher: " + y.data[indexPath.row].publisher as String?
 
         
@@ -94,7 +99,9 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    
+    @objc func linkLabelTapped(_ sender: UITapGestureRecognizer) {
+        print("linkLabelTapped")
+    }
    
 
     override func viewDidLoad() {
