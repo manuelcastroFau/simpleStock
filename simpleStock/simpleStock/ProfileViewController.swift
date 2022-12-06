@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
     
     
     
@@ -19,9 +19,40 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var notifyLabel: UILabel!
     
     
+    @IBOutlet weak var ProfileIMG: UIImageView!
+    
     @IBOutlet weak var userNameField: UITextField!
     
-//    @IBAction func onback(_ sender: Any) {
+    @IBAction func TapImage(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            //if camera is available
+            picker.sourceType = .photoLibrary
+        } else {
+            //if camera is not available
+            picker.sourceType = .photoLibrary
+        }
+
+        present(picker, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    //    @IBAction func onback(_ sender: Any) {
 //        //StockListViewController
 //        let main = UIStoryboard(name: "Main", bundle: nil)
 //
@@ -65,6 +96,14 @@ class ProfileViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+
+    
+
+    
+    
+    
+
     
     
     @IBAction func onSaveButton(_ sender: Any) {
