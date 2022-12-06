@@ -35,7 +35,7 @@ Original App Design Project - README Template
 * - [X] User will have a list of stocks.
 * - [X] User will be able to see to stock info
 * - [X] User will be able to navigate between different screens
-* - [X]User will be able to follow news of a specific stock.
+* - [X] User will be able to follow news of a specific stock.
 
 ## 2. - Sprints  
 
