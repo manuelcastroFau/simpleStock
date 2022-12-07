@@ -39,6 +39,39 @@ Original App Design Project - README Template
 
 ## 2. - Sprints  
 
+### Sprint 4 Issues Completed
+
+- [X] Add hyperlink for news text, Fix Thumbnail UI, Keyboard Dismiss on login screen   
+  @annaswaheed
+  @manuelcastroFau
+
+- [X] Add Logo Icon For Stock on Detail Stock View Page  
+  @annaswaheed
+  @manuelcastroFau
+
+- [X] Add Logo for the APP, on the iPhone main screen you can see the app logo    
+  @Velo23
+  @jlawso
+
+- [X] install almorafireimage for user profile picture  
+  @manuelcastroFau
+  @annaswaheed
+
+- [X] Test the UI   
+  @manuelcastroFau
+  @annaswaheed
+
+- [X] test the yahoo api library we created and make sure we can pass arguments and read returned data  
+  @manuelcastroFau
+  @annaswaheed
+
+- [X] parse the data for news and populate the news page  
+  @manuelcastroFau
+  @annaswaheed
+  
+- [X] create the UI for the news tab  
+  @manuelcastroFau
+  @annaswaheed
 
 ### Sprint 3 Issues Completed
 
