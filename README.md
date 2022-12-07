@@ -340,7 +340,17 @@ swift
 
 ### 6. Video Walkthrough
 
+4th Sprint Update:    
+
 Here's a walkthrough of implemented user stories:  
+
+![Imgur](https://imgur.com/IKO1yIS.gif)
+
+HD Video Walkthrough
+https://youtube.com/shorts/PFPum5tz0pI?feature=share
+
+
+3rd Sprint Update:    
   
 ![Imgur](https://imgur.com/UT6BGku.gif)
 
