@@ -7,7 +7,7 @@
 
 import UIKit
 import Parse
-
+import AlamofireImage
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
     
     
@@ -19,9 +19,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate ,
     @IBOutlet weak var notifyLabel: UILabel!
     
     
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var ProfileIMG: UIImageView!
     
     @IBOutlet weak var userNameField: UITextField!
+        
     
     @IBAction func TapImage(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -39,8 +41,14 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate ,
         present(picker, animated: true, completion: nil)
     }
     
-    
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 300, height: 300)
+        let scaledimage = image.af.imageScaled(to: size)
+        ProfileIMG.image = scaledimage
+        dismiss(animated: true, completion: nil)
+    }
     
     
     
@@ -76,7 +84,6 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate ,
     
     override func viewDidLoad() {
         
-        
         if PFUser.current() != nil {
             var user = PFUser.current()!
             firstNameField.text =  user["firstname"] as? String
@@ -87,6 +94,18 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate ,
             
             notifyLabel.isHidden = true
             
+            userNameField.isUserInteractionEnabled = false
+            
+            usernameLabel.text = (firstNameField.text! + " " + lastNameField.text!)
+            
+            let imageFile = user["image"] as! PFFileObject
+            
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            ProfileIMG.af.setImage(withURL: url)
+            
+            
+            //ProfileIMG.image = user["image"] as? UIImage
             
         }
        
@@ -115,15 +134,16 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate ,
             user["phone"] = phoneField.text
             user["email"] = emailField.text
             
+            let imgData = ProfileIMG.image!.pngData()
+            let file = PFFileObject(name: "image.png", data: imgData!)
+            user["image"] = file
+            
             user.saveInBackground { sucess, error in
                 if sucess {
                     //The save data
                     print("Update user profile data updated succesfully")
                     self.notifyLabel.isHidden = false
                     self.notifyLabel.text = "Data Updated"
-
-                    
-                    
                 }
                 else{
                     //It failed to save
