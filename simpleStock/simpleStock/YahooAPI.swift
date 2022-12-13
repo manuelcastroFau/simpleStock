@@ -339,8 +339,10 @@ func GetPricesLastSevenDays(ticker: String) -> Data {
         "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f",
         "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
     ]
+    // we needt to add 10 days before today and parse to date  in form xxxx-12-31
     let postData = NSMutableData(data: "end=2022-01-07".data(using: String.Encoding.utf8)!)
     postData.append("&symbol=\(ticker)".data(using: String.Encoding.utf8)!)
+    // we need to get today date
     postData.append("&start=2022-01-03".data(using: String.Encoding.utf8)!)
     let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/price-customdate")! as URL,
                                             cachePolicy: .useProtocolCachePolicy,
