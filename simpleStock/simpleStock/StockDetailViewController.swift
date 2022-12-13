@@ -27,6 +27,17 @@ class StockDetailViewController: UIViewController {
     @IBOutlet weak var stockWebsiteValue: UILabel!
     @IBOutlet weak var stockLogoImageView: UIImageView!
     
+    @IBAction func chartButtonClick(_ sender: Any) {
+        
+//        performSegue(withIdentifier: "charts", sender: self)
+//        print("hereeeeeeee")
+    }
+
+    @IBAction func newsButtonClick(_ sender: Any) {
+//        performSegue(withIdentifier: "news", sender: self)
+//        print("TTTTTThereeeeeeee")
+    }
+    
     let x = YahooAPI()
     
     override func viewDidLoad() {
@@ -84,6 +95,9 @@ class StockDetailViewController: UIViewController {
     }
     
 
+    
+    //performSegue(withIdentifier: "category", sender: sender)
+    
    
     // MARK: - Navigation
 
@@ -101,9 +115,30 @@ class StockDetailViewController: UIViewController {
                 
         
                 // Pass the selected stock to details stock controllers
-                let NewsViewController = segue.destination as! NewsViewController
         
-                NewsViewController.stock = stock
+        //print("Sgeue:    \(segue.identifier)")
+        //super.prepare(for: segue, sender: sender)
+        if segue.identifier == "news" {
+        
+            let NewsViewController = segue.destination as! NewsViewController
+            NewsViewController.stock = stock
+            print("Second NEWS")
+        } else {
+            let ChartViewController  = segue.destination as! ChartsViewController
+            ChartViewController.stock = stock
+            print("Second Charts")
+        }
+//        } else {
+//            print("Error we fucked")
+//        }
+
+        
+//
+//                let NewsViewController = segue.destination as! NewsViewController
+//                NewsViewController.stock = stock
+
+//                let ChartViewController  = segue.destination as! ChartsViewController
+//                ChartViewController.stock = stock
         
         
     }
