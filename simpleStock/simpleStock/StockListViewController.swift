@@ -74,7 +74,7 @@ class StockListViewController: UIViewController, UITableViewDelegate, UITableVie
                 do{
                     let y = try? JSONDecoder().decode(StockInfo.self, from: test)
                     print(y!.data.currentPrice)
-                    stockCurrentPrice = String(y!.data.currentPrice)
+                    stockCurrentPrice = String(format: "%.2f",y!.data.currentPrice)
                 }
                 catch{
                     print("error")

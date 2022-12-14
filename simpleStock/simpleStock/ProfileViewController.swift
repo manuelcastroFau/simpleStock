@@ -143,6 +143,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate ,
                     //The save data
                     print("Update user profile data updated succesfully")
                     self.notifyLabel.isHidden = false
+                    self.usernameLabel.text = String(self.firstNameField.text!) + " " + String(self.lastNameField.text!)
                     self.notifyLabel.text = "Data Updated"
                 }
                 else{
