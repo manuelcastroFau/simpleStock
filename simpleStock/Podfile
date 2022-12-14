@@ -8,5 +8,7 @@ target 'simpleStock' do
   # Pods for simpleStock
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'Charts'
+  pod 'TinyConstraints'
 
 end
