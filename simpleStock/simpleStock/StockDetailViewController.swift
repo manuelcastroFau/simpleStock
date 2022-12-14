@@ -24,9 +24,10 @@ class StockDetailViewController: UIViewController {
     @IBOutlet weak var stock52HighValue: UILabel!
     @IBOutlet weak var stock52LowValue: UILabel!
     @IBOutlet weak var stockOpenValue: UILabel!
-    @IBOutlet weak var stockWebsiteValue: UILabel!
+    //@IBOutlet weak var stockWebsiteValue: UILabel!
     @IBOutlet weak var stockLogoImageView: UIImageView!
     
+    @IBOutlet weak var stockWebsiteValue: UITextView!
     @IBAction func chartButtonClick(_ sender: Any) {
         
 //        performSegue(withIdentifier: "charts", sender: self)
