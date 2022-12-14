@@ -321,51 +321,58 @@ class YahooAPI{
         })
         
         dataTask.resume()
-        
         semaphore.wait()
         return ret
     }
-
+    
+    
+    
+    
+    
+    func GetValuesLastSevenDays(ticker: String, startDate: String, endDate:String) -> Data {
+        var values = Data()
+        var semaphore = DispatchSemaphore (value: 0)
+        let headers = [
+            "content-type": "application/x-www-form-urlencoded",
+            "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f",
+            "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
+        ]
+        // we needt to add 10 days before today and parse to date  in form xxxx-12-31
+        let postData = NSMutableData(data: "end=\(endDate)".data(using: String.Encoding.utf8)!)
+        postData.append("&symbol=\(ticker)".data(using: String.Encoding.utf8)!)
+        // we need to get today date
+        postData.append("&start=\(startDate)".data(using: String.Encoding.utf8)!)
+        let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/price-customdate")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = headers
+        request.httpBody = postData as Data
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+                semaphore.signal()
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                //print(httpResponse)
+                values = data!
+                semaphore.signal()
+            }
+        })
+        dataTask.resume()
+        semaphore.wait()
+        print("tell me the values +++++++++++++++++++++++")
+        print(values)
+        return values
+    }
+    
 }
 
 
 
 
-func GetPricesLastSevenDays(ticker: String) -> Data {
-    var Prices = Data()
-    var semaphore = DispatchSemaphore (value: 0)
-    let headers = [
-        "content-type": "application/x-www-form-urlencoded",
-        "X-RapidAPI-Key": "bd48fac225msh942df97a253a250p1c5cd8jsna7f3db3ff35f",
-        "X-RapidAPI-Host": "yahoo-finance97.p.rapidapi.com"
-    ]
-    // we needt to add 10 days before today and parse to date  in form xxxx-12-31
-    let postData = NSMutableData(data: "end=2022-01-07".data(using: String.Encoding.utf8)!)
-    postData.append("&symbol=\(ticker)".data(using: String.Encoding.utf8)!)
-    // we need to get today date
-    postData.append("&start=2022-01-03".data(using: String.Encoding.utf8)!)
-    let request = NSMutableURLRequest(url: NSURL(string: "https://yahoo-finance97.p.rapidapi.com/price-customdate")! as URL,
-                                            cachePolicy: .useProtocolCachePolicy,
-                                        timeoutInterval: 10.0)
-    request.httpMethod = "POST"
-    request.allHTTPHeaderFields = headers
-    request.httpBody = postData as Data
-    let session = URLSession.shared
-    let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-        if (error != nil) {
-            print(error)
-            semaphore.signal()
-        } else {
-            let httpResponse = response as? HTTPURLResponse
-            //print(httpResponse)
-            Prices = data!
-            semaphore.signal()
-        }
-    })
-    dataTask.resume()
-    semaphore.wait()
-    return Prices
-}
+
 
 
 

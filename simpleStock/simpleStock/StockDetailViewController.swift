@@ -41,6 +41,8 @@ class StockDetailViewController: UIViewController {
     
     let x = YahooAPI()
     
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
